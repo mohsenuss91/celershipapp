@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', AboutPageView.as_view(), name='home'),
+    path('/', AboutPageView.as_view(), name='home'),
     path('app', CelerAppView.as_view(), name='app'),
     path('sec', CelerSecView.as_view(), name='sec'),
     path('web', CelerWebView.as_view(), name='web'),
