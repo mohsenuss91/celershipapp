@@ -13,7 +13,7 @@ SECRET_KEY = 'v*dt8w%!5bw)4$u@oj8^vx0-ll7p8xj*hkm&5p+&ka5q&8aon!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['celerbus.herokuapp.com']
 
 
 # Application definition
