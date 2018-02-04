@@ -13,9 +13,10 @@
     <!-- Bootstrap core CSS -->
     <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
 
-    <!-- favicon--> 
+    <!-- favicon 
     <link href="{% static "img/favicon.png" %}" rel="shortcut icon">
-      
+    -->
+
     <!-- Custom styles for this template -->
     <link href="{% static "css/modern-business.css" %}" rel="stylesheet">
 
@@ -85,11 +86,12 @@
       </div>
     </div>
   </nav>
+
 <div>
 {% block about %}
 {% endblock %}
 </div>
-  <section id="services">
+<section id="services">
   {% block services %}
   {% endblock %}
   </section>
@@ -127,7 +129,6 @@
     <!-- Bootstrap core JavaScript -->
 
     <script src="{% static "vendor/jquery/jquery.min.js" %}"></script>
-    <script src="{% static "vendor/tether/tether.min.js"  %}"></script>
     <script src="{% static "vendor/bootstrap/js/bootstrap.min.js" %}"></script>
     <!-- Global site tag (gtag.js) - Google Analytics 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109135568-1"></script>
