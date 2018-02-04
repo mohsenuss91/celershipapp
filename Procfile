@@ -1,1 +1,1 @@
-web: gunicorn.celerbus.wsgi
+web: gunicorn celerbus.wsgi --log-file -
