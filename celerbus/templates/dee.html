@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block services %}
+
+
+<section class="content-section">
+
+<div class="container">
+<ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a href="{% url 'services' %}">services</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a>Celer-Dee</a>
+      </li>
+    </ol>
+
+        <div class="row">
+            <div class="col-lg-5">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Celer-Dee<br>Nous vous ouvrons votre fenêtre Digital </h2>
+                <p class="lead">Aujourd'hui, le marketing est DIGITAL. En 2020, 75 milliards de périphériques seront connectes a internet désormais vous ne Pouvez plus ignorer ce canal qu'est le monde Digital.
+                <a href="{% url 'contact' %}">
+                <h4>Consultez nous par ici...</h4>
+                </a></p>
+            </div>
+            <div class="container col-md-7">
+            <img class="img-fluid"  src="{% static '/img/services/digital.jpg' %}" alt="Celer-Dee">
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="Celership Expand Your Business">
+
+  <!-- /.content-section-b -->
+{% endblock %}
+

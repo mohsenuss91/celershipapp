@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block services %}
+
+<body>
+
+  <!-- Navigation -->
+
+
+  <!-- Page Content -->
+
+  <div class="container services">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Services
+      <small>Nos Offres</small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a href="{% url 'services' %}">services</a>
+    </ol>
+
+    <!-- Image Header -->
+    
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+      <div class="col-lg-3 mb-3">
+        <div class="card h-100">
+          <h4 class="card-header">Celer-App</h4>
+          <div class="card-body">
+            <img class="img-responsive" style="height: 100%; width: 100%" src="{% static '/img/celer-app-01.png'  %}" alt="Celer-App">
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'app' %}" class="btn btn-primary">Details..</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <div class="card h-100">
+          <h4 class="card-header">Celer-Web</h4>
+          <div class="card-body">
+              <img class="img-responsive" style="height: 100%; width: 100%" src="{% static '/img/celer-web-01.png'  %}" alt="Celer-App">
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'web' %}" class="btn btn-primary">Details..</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <div class="card h-100">
+          <h4 class="card-header">Celer-Dee</h4>
+          <div class="card-body">
+              <img class="img-responsive" style="height: 100%; width: 100%" src="{% static '/img/celer-dee-01.png'  %}" alt="Celer-App">
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'dee' %}" class="btn btn-primary">Details..</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 mb-3">
+        <div class="card h-100">
+          <h4 class="card-header">Celer-Sec</h4>
+          <div class="card-body">
+              <img class="img-responsive" style="height: 100%; width: 100%" src="{% static '/img/celer-sec-01.png'  %}" alt="Celer-App">
+            <p class="card-text"></p>
+          </div>
+          <div class="card-footer">
+            <a href="{% url 'sec' %}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+   <img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="">
+
+  <!-- Footer -->
+  <!-- Bootstrap core JavaScript 
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+-->
+</body>
+
+{% endblock %}
+

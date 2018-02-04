@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block services %}
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a href="{% url 'services' %}">services</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a>Celer-Sec</a>
+      </li>
+    </ol>
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Celer-Sec<br>Nous veillons à votre sécurité</h2>
+                <p class="lead">Votre sécurité nous concerne avant vous même. Grâce a notre compétence avérée en matière de sécurité des systèmes Et infrastructure I.T, nous veillons continuellement à votre protection contre Les vulnérabilités qui apparaissent quotidiennement. Nos Audits et testes De pénétrations sont rapportés avec l'ensemble des actions coercitives à mettre En place pour votre protection optimale dans l'environnement hostile De l’IT d'aujourd'hui.
+                <a href="{% url 'contact' %}">
+                <h4>consultez nous par ici...</h4>
+                </a></p>
+            </div>
+            <div class="container col-md-7">
+            <img class="img-fluid"  src="{% static '/img/services/sec.jpg' %}" alt="Celer-App">
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="">
+
+  <!-- /.content-section-b -->
+{% endblock %}
+

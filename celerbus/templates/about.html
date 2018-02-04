@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block about %}
+
+  <body>
+
+    <!-- Navigation -->
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Qui Sommes Nous</h1>
+
+            <!-- Intro Content -->
+      <div class="row">
+        <div class="col-lg">
+          <img class="img-fluid rounded mb-4"  src="{% static '/img/logo mer.png' %}" alt="Celership - Expand Your Business">
+        </div>
+        <div class="col-lg-6">
+          <h2>Notre vision</h2>
+          <p>Aujourd'hui, le marketing est DIGITAL. En 2020, 75 milliards de périphériques seront connectés à Internet. Désormais, vous ne pouvez plus ignorer ce canal Qu’est le monde Digital. </p>
+          <p>Celership vous propose un Audit de vos méthodes de communication actuelles, et vous accompagne dans votre transition vers une stratégie de communication Digitale répondant aux exigences actuelles des utilisateurs.</p>
+          <p>Nous proposons aussi des Audits de parcs informatiques (équipements réseaux, matériels et logiciels système) dans le but de vous aider à redéfinir les axes de leurs évolutions, optimiser vos ressources et parvenir à une meilleure maîtrise des coûts.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Team Members -->
+      
+      <h2>Packs et Promotions</h2>
+      
+
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="{% static '/img/promo/starter-01.png' %}" alt="Pack starter">
+            <div class="card-body">
+              <h4 class="card-title">Starter</h4>
+              <h6 class="card-subtitle mb-2 text-muted">99.999 DA</h6>
+              <p class="card-text">Demmarez votre business aux normes actuelles.</p>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'contact' %}">Réservez votre séance de travail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="{% static '/img/promo/classic-01.png' %}" alt="Pack Classic">
+            <div class="card-body">
+              <h4 class="card-title">Classic</h4>
+              <h6 class="card-subtitle mb-2 text-muted">150.000 DA</h6>
+              <p class="card-text">Démarauez vous de vos concurrents.</p>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'contact' %}">Réservez votre séance de travail</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mb-3">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="{% static '/img/promo/extra boost-01.png' %}" alt="Pack Extra Boost">
+            <div class="card-body">
+              <h4 class="card-title">Extra BOOST</h4>
+              <h6 class="card-subtitle mb-2 text-muted">200.000 DA</h6>
+              <p class="card-text">Propulsez votre business.</p>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'contact' %}">Réservez votre séance de travail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 mb-3">
+          <div class="card h-100 text-center">
+            <img class="card-img-top" src="{% static '/img/promo/valentine-01.png' %}" alt="Pack">
+            <div class="card-body">
+              <h4 class="card-title">Valentine</h4>
+              <h6 class="card-subtitle mb-2 text-muted">70.000 DA</h6>
+              <p class="card-text">Parce qu'on le fait par Amour.</p>
+            </div>
+            <div class="card-footer">
+              <a href="{% url 'contact' %}">Réservez votre séance de travail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Our Customers -->
+      <h2>Ils nous ont fait confiance</h2>
+      <div class="row">
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/Holiday_Inn.png' %}" alt="Holiday Inn">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/wtca.jpg' %}" alt="World Trade Center Algiers">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/logo corso-01 copie.png' %}" alt="restaurant Le Corso">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/calixa-01.png' %}" alt="Calixa Cosmetics">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/bisiness impact-01.png' %}" alt="">
+        </div>
+        <div class="col-lg-2 col-sm-4 mb-4">
+          <img class="img-fluid" src="{% static '/img/kpmglogo-wtc.png' %}" alt="KPMG">
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="">
+    <!-- /.container -->
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block services %}
+
+<ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a href="{% url 'services' %}">services</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a>Celer-App</a>
+      </li>
+    </ol>
+
+<section class="content-section">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Celer-App<br>Nous analysons vos besoins </h2>
+                <p class="lead">Notre efﬁcacité commence par l'écoute et l'analyse de vos besoins, En passant par le design de la logique applicative jusqu'au design de l'expérience Utilisateur qui favorise l'optimisation de votre future application ou solution MADE BY CELERSHIP. Avec Celership: vous désirez, on réalise. On s'occupe de la partie complexe pour vous.
+                <a href="{% url 'contact' %}">
+                <h4>consultez nous par ici...</h4>
+                </a></p>
+            </div>
+            <div class="container col-md-7">
+            <img class="img-fluid"  src="{% static '/img/services/app.jpg' %}" alt="Celer-App">
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="">
+
+  <!-- /.content-section-b -->
+{% endblock %}
+

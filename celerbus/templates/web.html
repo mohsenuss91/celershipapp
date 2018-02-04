@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block services %}
+
+
+<section class="content-section">
+
+<div class="container">
+<ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a href="{% url 'services' %}">services</a>
+      </li>
+      <li class="breadcrumb-item active">
+      <a>Celer-Web</a>
+      </li>
+    </ol>
+
+        <div class="row">
+            <div class="col-lg-5">
+                <hr class="section-heading-spacer">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">Celer-Web<br>Nous assurons votre présence sur la toile</h2>
+                <p class="lead">Votre présence sur le web est aujourd'hui un vecteur critique de la stratégie De votre business. Que vous soyez un petit commerce, ou une grande infrastructure ou industrie, Le contexte actuel exige  une présence sur la toile qui offre la meilleure expérience utilisateur aﬁn D’assurer une conversion maximale de vos futur clients et prospects. Désormais, votre image web est notre affaire. Celership vous offre le WEB clé en main.
+                <a href="{% url 'contact' %}">
+                <h4>Consultez nous par ici...</h4>
+                </a></p>
+            </div>
+            <div class="col-md-7">
+            <img class="img-fluid"  src="{% static '/img/services/web.jpg' %}" alt="Celer-Dee">
+            </div>
+        </div>
+            
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</section>
+<img class="img-fluid rounded mb-4" src=" {% static '/img/upper-banner.png' %}" alt="Celership Expand Your Business">
+
+  <!-- /.content-section-b -->
+{% endblock %}
+
